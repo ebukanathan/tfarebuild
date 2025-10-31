@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import bagHero from "../assets/bag-hero.jpg";
+import shoe4 from "../assets/shoe4.jpg";
+---
+
+<!-- ===================== BAG MAKING COURSE PAGE ===================== -->
+<main class="text-gray-800">
+
+  <!-- ===== INTRO / HERO SECTION ===== -->
+  <section class="relative min-h-[80vh] flex items-center justify-center bg-gray-900 text-center text-white">
+    <Image
+      src={shoe4}
+      alt="Bag Making Course Hero Image"
+      class="absolute inset-0 w-full h-full object-cover brightness-50"
+      width={1600}
+      height={900}
+      format="webp"
+    />
+    <div class="relative z-10 max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Master the Art of Bag Making
+      </h1>
+      <p class="text-lg md:text-xl mb-6 text-gray-100">
+        Learn to design and craft premium leather bags from scratch — guided by
+        expert instructors with real-world experience. Whether you dream of
+        building a brand or mastering a new skill, this course is your first
+        step toward creative excellence.
+      </p>
+      <a
+        href="#who"
+        class="inline-block bg-amber-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-600 transition"
+      >
+        Learn More
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== WHO THE COURSE IS FOR ===== -->
+  <section id="who" class="py-20 bg-gray-50 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Who Is This Course For?
+      </h2>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        Our bag making course is designed to accommodate learners from diverse
+        backgrounds — no prior experience required! Discover your creative side
+        and gain a marketable skill for the fashion and leather industry.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-amber-700 mb-3">
+            Beginners & Enthusiasts
+          </h3>
+          <p class="text-gray-600">
+            Perfect for anyone with a passion for fashion, design, or handmade
+            craftsmanship — no experience needed.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-amber-700 mb-3">
+            Small Business Owners
+          </h3>
+          <p class="text-gray-600">
+            Learn how to create your own product line and grow your leather goods
+            business with high-quality craftsmanship.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-amber-700 mb-3">
+            Creative Professionals
+          </h3>
+          <p class="text-gray-600">
+            Upgrade your design portfolio and gain hands-on skills that merge art,
+            fashion, and practicality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ONLINE TRAINING AD SECTION ===== -->
+  <section class="relative py-24 bg-amber-100">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 md:px-12">
+      <!-- Image -->
+      <div class="w-full md:w-1/2">
+        <Image
+          src={shoe4}
+          alt="Online Training Image"
+          class="w-full h-auto rounded-2xl shadow-lg object-cover"
+          width={800}
+          height={600}
+          format="webp"
+        />
+      </div>
+
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">
+          Learn from Anywhere — Join Our Online Training
+        </h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Can’t make it to our physical academy? No problem. Our online training
+          program brings the full experience to your screen. Learn step-by-step
+          with interactive video lessons, live sessions, and expert support — all
+          from the comfort of your home.
+        </p>
+        <a
+          href="https://wa.me/2348012345678"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-amber-500 text-white px-8 py-4 rounded-full font-semibold shadow-md hover:bg-amber-600 transition"
+        >
+          Enroll Now on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>

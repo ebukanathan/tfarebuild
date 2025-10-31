@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Shoemaking from '../components/Shoemaking.jsx';
+import Shoemaking from '../components/Shoemaking';
 import "../styles/global.css"
+import CourseIntro from '../components/CourseIntro.astro';
+import shoe4 from "../assets/shoe4.jpg";
 ---
 <Layout>
+    <CourseIntro image ={shoe4}/>
     <Shoemaking/>
 </Layout>

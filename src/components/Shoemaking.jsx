@@ -8,42 +8,6 @@ import {
 export default function ShoemakingCourse() {
   return (
     <main className="bg-gray-50 text-gray-800">
-      {/* ===== COURSE INTRODUCTION ===== */}
-      <section className="bg-white py-20 px-6 md:px-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-amber-700 mb-6">
-              Master the Art of Shoemaking
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Learn the craft, creativity, and business behind professional
-              shoemaking. At <strong>The Footwear Academy</strong>, we guide you
-              from raw ideas to finished footwear,turning passion into skill,
-              and skill into income.
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
-              Whether you’re a beginner or an aspiring entrepreneur, our
-              comprehensive hands-on course is designed to equip you with
-              everything you need to build a profitable footwear brand.
-            </p>
-            <a
-              href="#plans"
-              className="inline-block bg-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300"
-            >
-              Enroll Now
-            </a>
-          </div>
-
-          <div>
-            <img
-              src="/images/shoemaking-training.jpg"
-              alt="Shoemaking Training"
-              className="rounded-2xl shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* ===== WHY CHOOSE US ===== */}
       <section className="bg-amber-50 py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto text-center">
