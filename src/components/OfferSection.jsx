@@ -25,7 +25,7 @@ const cardData = [
 
 export default function CardSection() {
   return (
-    <section className="w-full py-20 bg-gray-900 text-white">
+    <section id="courses" className="w-full py-20 bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Section Heading */}
         <motion.h2

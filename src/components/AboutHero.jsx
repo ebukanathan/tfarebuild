@@ -1,15 +1,20 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import Activities from "./Activities.jsx";
+import shoe4 from "../assets/shoe4.jpg";
+import shoe from "../assets/shoe-making-one.webp";
 
 export default function AboutUs() {
   const [index, setIndex] = useState(0);
 
   // Gallery images - finished products & training
   const gallery = [
-    "https://images.unsplash.com/photo-1600185365483-26d7a4c6a941?auto=format&fit=crop&w=1600&q=80", // shoemaking tools
-    "https://images.unsplash.com/photo-1577401239170-897942555fb2?auto=format&fit=crop&w=1600&q=80", // shoes on table
-    "https://images.unsplash.com/photo-1621886650136-9690c2a9810d?auto=format&fit=crop&w=1600&q=80", // cobbler workshop
-    "https://images.unsplash.com/photo-1586363104860-8f0b7de86b9b?auto=format&fit=crop&w=1600&q=80", // footwear display
+    shoe,
+    shoe,
+    shoe, // shoemaking tools
+    // "https://images.unsplash.com/photo-1577401239170-897942555fb2?auto=format&fit=crop&w=1600&q=80", // shoes on table
+    // "https://images.unsplash.com/photo-1621886650136-9690c2a9810d?auto=format&fit=crop&w=1600&q=80", // cobbler workshop
+    // "https://images.unsplash.com/photo-1586363104860-8f0b7de86b9b?auto=format&fit=crop&w=1600&q=80", // footwear display
   ];
 
   // Auto slide every 5 seconds
@@ -40,18 +45,49 @@ export default function AboutUs() {
           className="relative z-10 text-center px-6"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-3">
-            About{" "}
-            <span className="text-yellow-400">LIVYN Footwear Academy</span>
+            About <span className="text-yellow-400">The Footwear Academy</span>
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
-            Crafting excellence from sole to soul — empowering the next
-            generation of world-class shoemakers.
+            We train and connect African Shoemakers to the World
           </p>
         </motion.div>
       </section>
 
+      {/* our mission section */}
+      <section className="bg-white py-16 px-6 md:px-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          {/* Video Section */}
+          <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/VfdJnE1-KxA"
+              title="Our Mission Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Mission Text Section */}
+          <div className="text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-amber-700">
+              Our Mission
+            </h2>
+            <p className="text-gray-600 leading-relaxed text-lg mb-4">
+              Our mission is to reduce poverty, unemployment and foster
+              socio-economic development. We are also at the forefront of
+              sustainable footwear manufacturing in Africa
+            </p>
+            <p className="text-gray-600 leading-relaxed text-lg">
+              Our ambition for Africa is to equip indigenous footwear brands
+              with the necessary skills that will enable them to compete
+              globally
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ======= OUR ACTIVITIES SECTION ======= */}
-      <section className="py-16 px-6 md:px-20 bg-gray-50">
+      {/* <section className="py-16 px-6 md:px-20 bg-gray-50">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -86,7 +122,8 @@ export default function AboutUs() {
             className="rounded-2xl shadow-lg"
           />
         </div>
-      </section>
+      </section> */}
+      <Activities />
 
       {/* ======= OUR ALUMNI SECTION ======= */}
       <section className="py-20 bg-gray-900 text-white text-center">
@@ -103,16 +140,17 @@ export default function AboutUs() {
           Our graduates have gone on to build thriving footwear brands, export
           quality products, and train others in the art of shoemaking.
         </p>
+        <img src={gallery[index]} />
 
         <div className="flex flex-wrap justify-center gap-6 px-6">
           {[
             {
-              name: "Chioma Daniels",
-              desc: "Founder of ChiDan Footwears, Lagos",
+              name: "Wakil Ismail",
+              desc: "La moda Abu Dhabi,UAE",
             },
             {
-              name: "Samuel Nwachukwu",
-              desc: "Exports handcrafted shoes to the UK & Ghana",
+              name: "Adam Iyang",
+              desc: "NorahKulture Designs Aba,Nigeria",
             },
             {
               name: "Amaka Obi",

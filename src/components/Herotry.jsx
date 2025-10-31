@@ -97,7 +97,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Transform Your Fitness Journey
+          Master the art of shoemaking
         </motion.h1>
 
         <motion.p
@@ -106,8 +106,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-lg md:text-xl text-gray-200 mb-8"
         >
-          Experience expert-led online training that helps you push boundaries
-          and achieve real results.
+          and turn your creativity into a thriving career.
         </motion.p>
 
         <motion.button
@@ -115,7 +114,7 @@ export default function HeroSection() {
           whileTap={{ scale: 0.95 }}
           className="bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-full text-lg font-semibold shadow-lg"
         >
-          Join the Program
+          <a href="#courses">Join the Program</a>
         </motion.button>
       </div>
 
