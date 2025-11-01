@@ -2,9 +2,14 @@
 import { Image } from "astro:assets";
 interface Props {
     image: string;
+    heading?: string;
+    desOne?: string;  
+    desTwo?: string; 
+    
 }
 
-const { image } = Astro.props;
+
+const { image,heading,desOne,desTwo } = Astro.props;
 ---
 
 <main>
@@ -12,18 +17,13 @@ const { image } = Astro.props;
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 class="text-4xl md:text-5xl font-bold text-amber-700 mb-6">
-              Master the Art of Shoemaking
+             {heading}
             </h1>
             <p class="text-lg text-gray-600 mb-4">
-              Learn the craft, creativity, and business behind professional
-              shoemaking. At <strong>The Footwear Academy</strong>, we guide you
-              from raw ideas to finished footwear,turning passion into skill,
-              and skill into income.
+                {desOne}
             </p>
             <p class="text-lg text-gray-600 mb-6">
-              Whether you’re a beginner or an aspiring entrepreneur, our
-              comprehensive hands-on course is designed to equip you with
-              everything you need to build a profitable footwear brand.
+             {desTwo}
             </p>
             <a
               href="#plans"
@@ -38,6 +38,8 @@ const { image } = Astro.props;
               src={image}
               alt="Shoemaking Training"
               class=" h-full rounded-2xl shadow-lg"
+              width={500}
+              height={400}
             />
           </div>
         </div>

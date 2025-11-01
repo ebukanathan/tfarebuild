@@ -3,9 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Shoemaking from '../components/Shoemaking';
 import "../styles/global.css"
 import CourseIntro from '../components/CourseIntro.astro';
-import shoe4 from "../assets/shoe4.jpg";
+import shoe1 from "../assets/shoe1.jpg";
+
+
+const head = "Master the Art of Shoemaking";
+const desO = "Learn the craft, creativity, and business behind professional shoemaking. At The Footwear Academy, we guide you from raw ideas to finished footwear,turning passion into skill, and skill into income.";
+const desT = "Whether you’re a beginner or an aspiring entrepreneur, our comprehensive hands-on course is designed to equip you with everything you need to build a profitable footwear brand.";
+
 ---
 <Layout>
-    <CourseIntro image ={shoe4}/>
+    <CourseIntro image ={shoe1} heading={head} desOne={desO} desTwo={desT}/>
     <Shoemaking/>
 </Layout>
