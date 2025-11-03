@@ -9,7 +9,7 @@ import heroImageOne from "../assets/heroImageone.jpg";
 import heroImageTwo from "../assets/heroImagetwo.jpg";
 import shoeImageFive from "../assets/shoe5.jpg";
 
-const images = [heroImageTwo.src, heroImageOne.src, shoeImageFive.src];
+const images = [heroImageTwo, heroImageOne, shoeImageFive];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -77,7 +77,7 @@ export default function HeroSection() {
               opacity: { duration: 0.4 },
             }}
             style={{
-              backgroundImage: `url(${images[index]})`,
+              backgroundImage: `url(${images[index].src})`,
               y,
               x,
             }}
