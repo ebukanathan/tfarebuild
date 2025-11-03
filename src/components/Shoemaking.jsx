@@ -4,6 +4,7 @@ import {
   FaUsers,
   FaCertificate,
 } from "react-icons/fa";
+import CourseButton from "./CourseButton.jsx";
 
 export default function ShoemakingCourse() {
   return (
@@ -127,14 +128,17 @@ export default function ShoemakingCourse() {
                     <li key={i}>• {feature}</li>
                   ))}
                 </ul>
-                <a
-                  href="#"
+                {/* <a
+                  href="/Enroll"
                   className="inline-block bg-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300"
                 >
                   Enroll Now
-                </a>
+                </a> */}
               </div>
             ))}
+          </div>
+          <div className=" mt-8">
+            <CourseButton />
           </div>
         </div>
       </section>

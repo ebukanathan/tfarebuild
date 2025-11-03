@@ -6,12 +6,12 @@ import CourseIntro from '../components/CourseIntro.astro';
 import shoe1 from "../assets/shoe1.jpg";
 
 
-const head = "Master the Art of Shoemaking";
+const head1 = "Master the Art of Shoemaking";
 const desO = "Learn the craft, creativity, and business behind professional shoemaking. At The Footwear Academy, we guide you from raw ideas to finished footwear,turning passion into skill, and skill into income.";
 const desT = "Whether you’re a beginner or an aspiring entrepreneur, our comprehensive hands-on course is designed to equip you with everything you need to build a profitable footwear brand.";
 
 ---
 <Layout>
-    <CourseIntro image ={shoe1} heading={head} desOne={desO} desTwo={desT}/>
-    <Shoemaking/>
+    <CourseIntro image ={shoe1} heading={head1} desOne={desO} desTwo={desT}/>
+    <Shoemaking client:load/>
 </Layout>

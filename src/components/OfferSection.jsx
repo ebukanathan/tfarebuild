@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { link } from "framer-motion/client";
 
 const cardData = [
   {
@@ -8,18 +9,21 @@ const cardData = [
     title: "Shoe Making",
     text: "Customized one-on-one coaching designed to help you achieve faster results with tailored plans.",
     img: "../src/assets/shoe4.jpg",
+    link: "/Shoe",
   },
   {
     id: 2,
     title: "Bag Making",
     text: "Progressive strength workouts that focus on endurance, power, and perfect form.",
     img: "../src/assets/bag-8.jpeg",
+    link: "/Bag",
   },
   {
     id: 3,
     title: "Group Training",
     text: "Eat smart with meal plans and guidance that fuel your training and recovery effectively.",
     img: "../src/assets/group-training-hero.webp",
+    link: "/Training",
   },
 ];
 
@@ -87,7 +91,8 @@ function AnimatedCard({ card, delay }) {
   };
 
   return (
-    <motion.div
+    <motion.a
+      href={card.link}
       ref={ref}
       variants={variants}
       initial="hidden"
@@ -107,6 +112,6 @@ function AnimatedCard({ card, delay }) {
         <h3 className="text-2xl font-semibold mb-2">{card.title}</h3>
         <p className="text-gray-400 text-sm">{card.text}</p>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

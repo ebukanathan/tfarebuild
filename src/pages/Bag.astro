@@ -4,10 +4,16 @@ import Bagmaking from '../components/Bagmaking.jsx';
 
 import "../styles/global.css"
 import CourseIntro from '../components/CourseIntro.astro';
-import shoe1 from "../assets/shoe1.jpg";
+import bag from "../assets/bagsix.png";
+
+
+const head1 = "Learn the Art of Bag Making";
+const desO = "If you're looking to become a true pro in the world of bag-making, our course is tailor-made for you. It's not just about crafting bags; it's about becoming a versatile expert who can handle every aspect of the bag making business. ";
+const desT = "We'll equip you with both technical prowess and a design sense that's world-class. Get ready to step into a global community of bag aficionados!";
+
 ---
 
 <Layout>
-    <CourseIntro image ={shoe1} heading={head} desOne={desO} desTwo={desT}/>
+    <CourseIntro image ={bag} heading={head1} desOne={desO} desTwo={desT}/>
     <Bagmaking/>
 </Layout>

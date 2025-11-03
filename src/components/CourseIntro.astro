@@ -1,5 +1,9 @@
 ---
 import { Image } from "astro:assets";
+import EnrolModal from "./EnrolModal";
+import CourseButton from "./CourseButton.jsx";
+
+
 interface Props {
     image: string;
     heading?: string;
@@ -25,12 +29,10 @@ const { image,heading,desOne,desTwo } = Astro.props;
             <p class="text-lg text-gray-600 mb-6">
              {desTwo}
             </p>
-            <a
-              href="#plans"
-              class="inline-block bg-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-700 transition-all duration-300"
-            >
-              Enroll Now
-            </a>
+           
+            <div class="items-left">
+                <CourseButton client:load/>
+            </div>
           </div>
 
           <div class=" w-full h-96 overflow-hidden">
