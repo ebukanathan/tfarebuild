@@ -5,12 +5,11 @@ import {
   useTransform,
 } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import heroImageOne from "../assets/heroImageone.jpg";
+import heroImageTwo from "../assets/heroImagetwo.jpg";
+import shoeImageFive from "../assets/shoe5.jpg";
 
-const images = [
-  "../src/assets/heroImagetwo.jpg",
-  "../src/assets/heroImageone.jpg",
-  "../src/assets/shoe5.jpg",
-];
+const images = [heroImageTwo.src, heroImageOne.src, shoeImageFive.src];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -117,24 +116,6 @@ export default function HeroSection() {
           <a href="#courses">Join the Program</a>
         </motion.button>
       </div>
-
-      {/* Navigation Buttons */}
-      {/* <div className="absolute inset-y-0 left-4 flex items-center z-10">
-        <button
-          onClick={slidePrev}
-          className="bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
-        >
-          ◀
-        </button>
-      </div>
-      <div className="absolute inset-y-0 right-4 flex items-center z-10">
-        <button
-          onClick={slideNext}
-          className="bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
-        >
-          ▶
-        </button>
-      </div> */}
 
       {/* Dots */}
       <div className="absolute bottom-6 flex justify-center w-full space-x-2 z-10">
