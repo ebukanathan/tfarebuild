@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import awardone from "../assets/awardone.jpg";
 
 const awards = [
   {
@@ -42,7 +43,7 @@ export default function AwardsSection() {
     <section
       className="relative w-full h-[70vh] flex flex-col items-center justify-center text-center text-white p-4"
       style={{
-        backgroundImage: "url('../src/assets/awardone.jpg')",
+        backgroundImage: `url(${awardone.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
