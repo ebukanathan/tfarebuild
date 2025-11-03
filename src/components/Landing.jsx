@@ -45,7 +45,7 @@ function Landing() {
           />
           <img
             id="slide2"
-            src={images[1]}
+            src={images[1].src}
             alt="Product image 2"
             class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0"
           />
