@@ -28,12 +28,12 @@ const GroupTraining = () => {
             teamwork, and practical experience to bring your creative dreams to
             life.
           </p>
-          <a
+          {/* <a
             href="#why"
             className="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition"
           >
             Discover Why It’s Worth It
-          </a>
+          </a> */}
         </motion.div>
       </section>
 

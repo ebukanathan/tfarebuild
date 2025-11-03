@@ -19,10 +19,10 @@ const EnrollModal = ({ isOpen, onClose }) => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // from EmailJS
-        "YOUR_TEMPLATE_ID",
+        "service_abf1zuk", // from EmailJS
+        "template_4hj6nxt",
         formData,
-        "YOUR_PUBLIC_KEY"
+        "gO7DF-gU3BSDuSzAZ" // public key
       )
       .then(
         () => {
