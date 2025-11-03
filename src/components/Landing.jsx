@@ -2,12 +2,11 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import landone from "../assets/shoe-making-eleven.webp";
+import landtwo from "../assets/shoe-making-one.webp";
 
 function Landing() {
-  const images = [
-    "./src/assets/shoe-making-eleven.webp",
-    "/src/assets/shoe-making-one.webp",
-  ];
+  const images = [landone, landtwo];
   useEffect(() => {
     const img1 = document.getElementById("slide1");
     const img2 = document.getElementById("slide2");
@@ -40,7 +39,7 @@ function Landing() {
         >
           <img
             id="slide1"
-            src={images[0]}
+            src={images[0].src}
             alt="Product image 1"
             class="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out"
           />
