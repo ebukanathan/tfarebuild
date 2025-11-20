@@ -5,34 +5,34 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    text: "The online training sessions completely changed my fitness routine. I’ve never felt stronger or more confident!",
+    name: "Anaekwe Tochukwu",
+    text: "During my training at The Footwear Academy, I did not only gain knowledge, but I also found friendships that was timely in my life. The soft skills were the highlight of the programme, the way it was so relevant to our daily life experiences and all",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
   },
   {
     id: 2,
-    name: "Michael Lee",
-    text: "Personalized workouts and nutrition guidance helped me lose 15kg in 3 months. Highly recommend!",
+    name: "Palmer Glory-Anna",
+    text: "All through the training, I enjoyed every bit and every section, from the Leatherworks to the soft skills classes, I got to understand that shoemaking can indeed be fun and it is not gender based. Thank you TFA.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: 3,
-    name: "Emma Brown",
-    text: "The trainers are so supportive! The live feedback during my virtual workouts keeps me motivated every day.",
+    name: "Wakil Ismail Kareem",
+    text: "My works has always been appreciated and liked and it is as a result of the The Footwear Academy's shoemaking technique that I gained. I apply them daily at my workplace and always get wonderful results.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
-  {
-    id: 4,
-    name: "David Kim",
-    text: "I was skeptical about online training, but this experience changed my perspective completely. It’s amazing!",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
-  },
-  {
-    id: 5,
-    name: "Lisa Adams",
-    text: "Their online sessions are dynamic, motivating, and super fun! I’ve achieved my goals faster than I thought.",
-    image: "https://randomuser.me/api/portraits/women/51.jpg",
-  },
+  // {
+  //   id: 4,
+  //   name: "David Kim",
+  //   text: "I was skeptical about online training, but this experience changed my perspective completely. It’s amazing!",
+  //   image: "https://randomuser.me/api/portraits/men/45.jpg",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Lisa Adams",
+  //   text: "Their online sessions are dynamic, motivating, and super fun! I’ve achieved my goals faster than I thought.",
+  //   image: "https://randomuser.me/api/portraits/women/51.jpg",
+  // },
 ];
 
 export default function TestimonialCarousel() {
@@ -103,12 +103,12 @@ export default function TestimonialCarousel() {
         {/* Slider Container */}
         <div className="relative flex items-center justify-center">
           {/* Left Arrow */}
-          <button
+          {/* <button
             onClick={prevSlide}
             className="absolute left-0 md:-left-8 bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full z-10"
           >
             <ChevronLeft size={24} />
-          </button>
+          </button> */}
 
           {/* Cards */}
           <div className="flex gap-6 overflow-hidden justify-center">
@@ -141,12 +141,12 @@ export default function TestimonialCarousel() {
           </div>
 
           {/* Right Arrow */}
-          <button
+          {/* <button
             onClick={nextSlide}
             className="absolute right-0 md:-right-8 bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full z-10"
           >
             <ChevronRight size={24} />
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

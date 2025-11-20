@@ -118,7 +118,7 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} LIVYN Tech. All Rights Reserved.
+        © {new Date().getFullYear()} Jivantech. All Rights Reserved.
       </div>
     </footer>
   );
