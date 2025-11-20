@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.jsx";
 import Whatapp from "../components/Whatsapp.jsx";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,7 +13,7 @@ import Whatapp from "../components/Whatsapp.jsx";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/icon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>The Footwear Academy</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<NavBar/>
