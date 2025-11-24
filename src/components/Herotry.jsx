@@ -108,13 +108,13 @@ export default function HeroSection() {
           and turn your creativity into a thriving career.
         </motion.p>
 
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-full text-lg font-semibold shadow-lg"
         >
           <a href="#courses">Join the Program</a>
-        </motion.button>
+        </motion.button> */}
       </div>
 
       {/* Dots */}

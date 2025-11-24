@@ -42,7 +42,7 @@ export default function CardSection() {
           WE OFFER
         </motion.h2>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -52,7 +52,18 @@ export default function CardSection() {
           Our academy is a dedicated hub for all things shoes and bags, offering
           a diverse range of courses and resources for both aspiring and
           seasoned enthusiasts.
-        </motion.p>
+        </motion.p> */}
+        <p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-gray-400 text-lg max-w-2xl mx-auto mb-12"
+        >
+          Our academy is a dedicated hub for all things shoes and bags, offering
+          a diverse range of courses and resources for both aspiring and
+          seasoned enthusiasts.
+        </p>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
